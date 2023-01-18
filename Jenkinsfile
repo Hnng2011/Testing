@@ -20,13 +20,4 @@ pipeline {
         sh "poetry run pytest"
       }
     }
-
-  post {
-    success {
-      echo "SUCCESSFUL"
-    }
-    failure {
-      echo "FAILED"
-    }
-  }
 }
